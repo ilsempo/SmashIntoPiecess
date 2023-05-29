@@ -8,21 +8,21 @@
 
 @font-face {
     font-family: "Request Personal";
-    src: url("../fonts/RequestPersonalUse.ttf") format("woff");
+    src: url("../fonts/RequestPersonalUse.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Azonix";
-    src: url("../fonts/Azonix.otf") format("woff");
+    src: url("../fonts/Azonix.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-Medium.ttf") format("woff");
+    src: url("../fonts/Inter-Medium.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -241,6 +241,9 @@ p {
     margin-right: .5rem;
 }
 
+.row {
+    margin-right: 0;
+}
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
 /*.card va a tomar todas las semanticas q coloques con eso*/
