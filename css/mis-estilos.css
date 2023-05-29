@@ -1,0 +1,217 @@
+:root {
+    --color-primario: #54c2e1;
+    --color-secundario: #f0e51d;
+    --color-terciario: #e61543;
+    --color-cuarto: #0c0d0e;
+
+}
+
+@font-face {
+    font-family: "Request Personal";
+    src: url("../fonts/RequestPersonalUse.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Azonix";
+    src: url("../fonts/Azonix.otf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg-dark {
+    background-color: var(--color-cuarto) !important;
+}
+
+a {
+    font-family: 'Inter';
+    font-weight: 200;
+}
+
+
+
+.universos {
+    color: yellow;
+}
+
+.aprende {
+    color: darkblue;
+}
+
+/*font-size: 10rem;*/
+@media (min-width:992px) {
+    h1 {
+        font-family: 'Azonix';
+        font-weight: 500;
+        font-size: 4rem;
+    }
+
+    .carousel-caption {
+        top: 3rem
+    }
+}
+
+@media (max-width:992px) {
+    #carouselDark h1 {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 3rem;
+
+    }
+
+    .carousel-caption {
+        top: 3rem
+    }
+}
+
+@media (max-width:767px) {
+    #carouselDark h1 {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 2rem;
+
+    }
+
+    #carouselDark h2 {
+        font-size: 1rem;
+    }
+
+    #texto h3 {
+        text-align: center !important;
+        text-justify: auto !important;
+    }
+
+    .carousel-caption {
+        top: 3rem
+    }
+}
+
+@media (max-width:576px) {
+    #carouselDark h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption {
+        top: 3rem;
+    }
+
+    #carouselDark h2 {
+        font-size: 0.5rem;
+    }
+}
+
+#carouselDark h1 {
+    font-family: 'Inter';
+    font-weight: 500;
+
+}
+
+#carouselDark h2 {
+    /*A este texto hay que moverlo hacia arriba*/
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+#carouselDark h3 {
+    font-family: 'Inter';
+    font-weight: 300;
+}
+
+.card {
+    background-color: rgb(41, 72, 73);
+}
+
+.deep {
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Azonix';
+}
+
+h2 {
+    font-family: 'Request Personal Use';
+    font-weight: 400;
+}
+
+.deeph2 {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Inter';
+    font-weight: 100;
+}
+
+#texto h3 {
+    font-family: 'Inter';
+    font-weight: 300;
+    padding-left: 5rem;
+}
+
+#texto p {
+    font-family: 'Inter';
+    font-weight: 100;
+    padding-left: 5rem;
+}
+
+#new {
+    background: url(../img/fondo-5.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media (max-width:767px) {
+    #contacto h1 {
+        font-size: 4rem !important;
+    }
+}
+
+#logo img {
+    color: yellow
+}
+
+#contacto {
+    background: url(../img/rainy-rooftop.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.logoSmash,
+.logoSmash:hover {
+    font-family: "Request Personal Use";
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+#explorar {
+    background-color: var(--color-terciario);
+}
+
+.hero {
+    background-image: url(../img/smash1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh + 25rem);
+}
+/*medida vh*/
+/*#texto va a tomar la id de base y cambiara la semantica del interior*/
+/*.card va a tomar todas las semanticas q coloques con eso*/
+/*h1{} va a tomar todas las mismas etiquetas y cambiarlas*/
