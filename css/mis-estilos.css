@@ -57,6 +57,7 @@ a {
     .carousel-caption {
         top: 3rem
     }
+
 }
 
 @media (max-width:992px) {
@@ -69,6 +70,10 @@ a {
 
     .carousel-caption {
         top: 3rem
+    }
+
+    .hero {
+        height: calc(40vh + 25rem);
     }
 }
 
@@ -92,6 +97,11 @@ a {
     .carousel-caption {
         top: 3rem
     }
+
+    .hero {
+        height: calc(40vh + 25rem);
+    }
+
 }
 
 @media (max-width:576px) {
@@ -102,9 +112,13 @@ a {
     .carousel-caption {
         top: 3rem;
     }
-
+    
     #carouselDark h2 {
         font-size: 0.5rem;
+    }
+
+    .hero {
+        height: calc(40vh + 25rem);
     }
 }
 
@@ -209,8 +223,18 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh + 25rem);
+    height: calc(80vh + 25rem);
 }
+
+@media (max-width:992px) {
+    .hero.mobile {
+        height: calc(40vh + 25rem);
+    }
+
+}
+.disco-wrapper {
+    margin: 1rem;
+ }
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
 /*.card va a tomar todas las semanticas q coloques con eso*/

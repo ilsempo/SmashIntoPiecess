@@ -1,5 +1,6 @@
 const discos = document.querySelectorAll(".disco");
 const audios = document.querySelectorAll("audio");
+const hero = document.querySelector('.hero');
 
 discos.forEach((disco, index) => {
   const audio = audios[index];
@@ -32,7 +33,7 @@ function stopAllAudios() {
 }
 
 function fadeVolumeIn(audio) {
-  const maxVolume = 1; // Volumen máximo deseado
+  const maxVolume = 1; // Volumen máximo
   const fadeDuration = 3000; // Duración de la transición de volumen en milisegundos
 
   audio.volume = 0; // Establecer el volumen inicial en 0
@@ -46,7 +47,6 @@ function fadeVolumeIn(audio) {
     audio.volume = currentVolume;
 
     if (currentVolume >= maxVolume) {
-      // Establecer el volumen final deseado
       audio.volume = maxVolume;
       clearInterval(fadeInterval);
     }
@@ -54,3 +54,14 @@ function fadeVolumeIn(audio) {
 }
 
 
+function checkMediaQuery() {
+  if (window.matchMedia('(max-width: 992px)').matches) {
+    hero.classList.add('mobile');
+  } else {
+    hero.classList.remove('mobile');
+  }
+}
+
+checkMediaQuery();
+
+window.addEventListener('resize', checkMediaQuery);
