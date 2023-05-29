@@ -1,6 +1,7 @@
 const discos = document.querySelectorAll(".disco");
 const audios = document.querySelectorAll("audio");
 const hero = document.querySelector('.hero');
+const nav = document.querySelector('.navbar');
 
 discos.forEach((disco, index) => {
   const audio = audios[index];
@@ -57,8 +58,10 @@ function fadeVolumeIn(audio) {
 function checkMediaQuery() {
   if (window.matchMedia('(max-width: 992px)').matches) {
     hero.classList.add('mobile');
+    nav.classList.remove('navbar');
   } else {
     hero.classList.remove('mobile');
+    nav.classList.add('navbar');
   }
 }
 
