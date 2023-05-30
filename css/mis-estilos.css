@@ -31,13 +31,6 @@
     background-color: var(--color-cuarto) !important;
 }
 
-a {
-    font-family: 'Inter';
-    font-weight: 200;
-}
-
-
-
 .universos {
     color: yellow;
 }
@@ -72,9 +65,7 @@ a {
         top: 3rem
     }
 
-    .hero {
-        height: calc(40vh + 25rem);
-    }
+  
 }
 
 @media (max-width:767px) {
@@ -98,10 +89,6 @@ a {
         top: 3rem
     }
 
-    .hero {
-        height: calc(40vh + 25rem);
-    }
-
 }
 
 @media (max-width:576px) {
@@ -117,9 +104,6 @@ a {
         font-size: 0.5rem;
     }
 
-    .hero {
-        height: calc(40vh + 25rem);
-    }
 }
 
 #carouselDark h1 {
@@ -154,7 +138,6 @@ h1 {
 
 h2 {
     font-family: 'Request Personal Use';
-    font-weight: 400;
 }
 
 h3 {
