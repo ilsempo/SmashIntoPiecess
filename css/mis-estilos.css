@@ -8,8 +8,7 @@
 
 @font-face {
     font-family: "Request Personal";
-    src: url("../fonts/RequestPersonalUse.ttf"),
-    url("../fonts/RequestPersonalUse.otf");
+    src: url("../fonts/RequestPersonalUse.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -23,8 +22,7 @@
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-Medium.ttf"),
-    url("../fonts/Inter-Medium.otf");
+    src: url("../fonts/Inter-Medium.otf");
     font-weight: normal;
     font-style: normal;
 }
