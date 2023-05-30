@@ -8,21 +8,27 @@
 
 @font-face {
     font-family: "Request Personal";
-    src: url("../fonts/RequestPersonalUse.woff");
+    src: url("../fonts/RequestPersonalUse.woff"),
+    url("../fonts/RequestPersonalUse.ttf"),
+    url("../fonts/RequestPersonalUse.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Azonix";
-    src: url("../fonts/Azonix.woff");
+    src: url("../fonts/Azonix.woff"),
+    url("../fonts/Azonix.ttf"),
+    url("../fonts/Azonix.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-Medium.woff");
+    src: url("../fonts/Inter-Medium.woff"),
+    url("../fonts/Inter-Medium.ttf"),
+    url("../fonts/Inter-Medium.otf");
     font-weight: normal;
     font-style: normal;
 }
