@@ -8,21 +8,21 @@
 
 @font-face {
     font-family: "Request Personal";
-    src: url("../fonts/RequestPersonalUse.otf");
+    src: url("../fonts/RequestPersonalUse.woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Azonix";
-    src: url("../fonts/Azonix.otf");
+    src: url("../fonts/Azonix.woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-Medium.otf");
+    src: url("../fonts/Inter-Medium.woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -154,11 +154,6 @@ h1 {
 
 h2 {
     font-family: 'Request Personal Use';
-    font-weight: 400;
-}
-
-.deeph2 {
-    font-family: 'Inter';
     font-weight: 400;
 }
 
