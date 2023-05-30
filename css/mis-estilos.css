@@ -219,18 +219,32 @@ p {
 }
 
 .hero {
-    background-image: url(../img/smash1.jpg);
+    /* background-image: url(../img/smash1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: calc(80vh + 25rem);
+    background-position: center; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-banner {
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .img-banner {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+        height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    }
 }
 
 @media (max-width:992px) {
     .hero.mobile {
-        height: calc(40vh + 25rem);
+        height: fit-content;
     }
-
 }
 
 .disco-wrapper {
@@ -244,6 +258,8 @@ p {
 .row {
     margin-right: 0;
 }
+
+
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
 /*.card va a tomar todas las semanticas q coloques con eso*/
