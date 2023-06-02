@@ -9,8 +9,8 @@
 @font-face {
     font-family: "Request Personal";
     src: url("../fonts/RequestPersonalUse.woff"),
-    url("../fonts/RequestPersonalUse.ttf"),
-    url("../fonts/RequestPersonalUse.otf");
+        url("../fonts/RequestPersonalUse.ttf"),
+        url("../fonts/RequestPersonalUse.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -18,8 +18,8 @@
 @font-face {
     font-family: "Azonix";
     src: url("../fonts/Azonix.woff"),
-    url("../fonts/Azonix.ttf"),
-    url("../fonts/Azonix.otf");
+        url("../fonts/Azonix.ttf"),
+        url("../fonts/Azonix.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -27,8 +27,8 @@
 @font-face {
     font-family: "Inter";
     src: url("../fonts/Inter-Medium.woff"),
-    url("../fonts/Inter-Medium.ttf"),
-    url("../fonts/Inter-Medium.otf");
+        url("../fonts/Inter-Medium.ttf"),
+        url("../fonts/Inter-Medium.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -71,7 +71,7 @@
         top: 3rem
     }
 
-  
+
 }
 
 @media (max-width:767px) {
@@ -168,11 +168,6 @@ p {
     padding-left: 5rem;
 }
 
-#new {
-    background: url(../img/fondo-5.png) no-repeat center center fixed;
-    background-size: cover;
-}
-
 @media (max-width:767px) {
     #contacto h1 {
         font-size: 4rem !important;
@@ -181,11 +176,6 @@ p {
 
 #logo img {
     color: yellow
-}
-
-#contacto {
-    background: url(../img/rainy-rooftop.gif) no-repeat center center fixed;
-    background-size: cover;
 }
 
 .logoSmash,
@@ -199,7 +189,8 @@ p {
 }
 
 #explorar {
-    background-color: var(--color-terciario);
+    background: url("../img/fondoNos.jpg") no-repeat;
+    background-size: cover;
 }
 
 .hero {
@@ -220,8 +211,10 @@ p {
 
 @media (max-width: 768px) {
     .img-banner {
-        max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-        height: auto; /* Permite que la altura se ajuste proporcionalmente */
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+        height: auto;
+        /* Permite que la altura se ajuste proporcionalmente */
     }
 }
 
@@ -243,6 +236,70 @@ p {
     margin-right: 0;
 }
 
+.download-now {
+    background: #54c2e1 url('../img/smashNos.jpg') no-repeat right 65px;
+    background-size: 35%;
+    height: 100vh;
+}
+
+.fondo2 {
+    height: 100%;
+    background: url('../img/misc1.png') no-repeat left 11px;
+    background-size: 45%;
+    margin-left: 2rem;
+}
+
+.download-now p {
+    color: #fff;
+    margin: 40px 30px 40px 0;
+    line-height: 30px;
+}
+
+.download-now h1 {
+    font-size: 55px;
+    font-weight: 100;
+    color: #fff;
+    margin: 100px 0 20px 0;
+}
+
+.home-newsletter {
+    padding: 80px 0;
+    background: var(--color-cuarto);
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-newsletter .single h2 {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #243c4f;
+}
+
+.home-newsletter .single .btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #243c4f;
+    color: #fff;
+}
 
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
