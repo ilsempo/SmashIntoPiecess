@@ -68,3 +68,27 @@ function checkMediaQuery() {
 checkMediaQuery();
 
 window.addEventListener('resize', checkMediaQuery);
+
+
+const carouselItems = document.querySelectorAll('.carousel .carousel-item');
+
+carouselItems.forEach(function(item) {
+  const minPerSlide = 4;
+  let next = item.nextElementSibling;
+
+  if (!next) {
+    next = item.parentNode.firstElementChild;
+  }
+
+  item.appendChild(next.firstElementChild.cloneNode(true));
+
+  for (let i = 0; i < minPerSlide; i++) {
+    next = next.nextElementSibling;
+
+    if (!next) {
+      next = item.parentNode.firstElementChild;
+    }
+
+    item.appendChild(next.firstElementChild.cloneNode(true));
+  }
+});
