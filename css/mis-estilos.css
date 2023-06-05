@@ -238,29 +238,40 @@ p {
 
 .download-now {
     background: url('../img/nosBack.jpg') no-repeat;
-    background-size: 100%;
-    height: 100vh;
+    background-size: cover;
+    /* height: 100vh; */
+    padding: 100px 0 100px 0;
+
 }
 
-/* .fondo2 {
-    height: 100%;
-    background: url('../img/misc1.png') no-repeat left 11px;
-    background-size: 45%;
-    margin-left: 2rem;
-} */
+.historia-banda {
+    margin: 0 250px 0 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    .historia-banda {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .historia-banda {
+      margin: 0 100px;
+    }
+  }
 
 .download-now p {
     color: #fff;
-    margin: 40px 30px 40px 0;
     line-height: 30px;
 }
 
 .download-now h1 {
     font-size: 55px;
     font-weight: 100;
-    margin: 100px 0 20px 0;
+    margin: 20px 0 50px 0;
     color: var(--color-secundario);
 }
+
 
 .home-newsletter {
     padding: 80px 0;
@@ -348,6 +359,7 @@ p {
         transform: translateX(-25%) !important;
     }
 }
+
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
 /*.card va a tomar todas las semanticas q coloques con eso*/
