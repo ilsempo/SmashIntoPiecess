@@ -109,6 +109,17 @@ p {
         font-size: 4rem !important;
     }
 
+    .card {
+        width: 400px !important;
+    }
+
+    .download-now {
+        background: url('../img/nosBackMobile.jpg') no-repeat !important;
+        background-size: cover !important;
+    }
+   .youtube {
+    background-size: cover !important;
+   }
 }
 
 #logo img {
@@ -193,9 +204,9 @@ p {
 
 @media only screen and (min-width: 820px) {
     .historia-banda {
-      margin: 0 250px;
+        margin: 0 250px;
     }
-  }
+}
 
 .download-now p {
     color: #fff;
@@ -251,12 +262,13 @@ p {
 
 
 .image-container {
-  padding-right: 3rem;
+    padding-right: 3rem;
 }
 
 .card {
     background-color: var(--color-terciario);
     border: 3px solid var(--color-terciario);
+    width: 700px;
 }
 
 /* .card-img {
@@ -264,8 +276,8 @@ p {
     border-style: solid;
     border-image: linear-gradient(to right, var(--color-secundario), var(--color-terciario)) 1;
   } */
-  
-  .tarjeta {
+
+.tarjeta {
     background: linear-gradient(0deg, rgb(17, 25, 31), rgb(70, 46, 46));
     position: relative;
 }
@@ -278,7 +290,7 @@ p {
     left: -2px;
     top: -2px;
     background: linear-gradient(45deg, #f1e513, #ff6600, #00ff66, #00ffff,
-            #ff00ff, #9c7bb4 , #6e0dd0, #ff3300, #4fc0de);
+            #ff00ff, #9c7bb4, #6e0dd0, #ff3300, #4fc0de);
     background-size: 400%;
     width: calc(100% + 5px);
     height: calc(100% + 5px);
@@ -316,6 +328,7 @@ p {
 .cript {
     display: none;
 }
+
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
 /*.card va a tomar todas las semanticas q coloques con eso*/
