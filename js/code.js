@@ -72,8 +72,14 @@ checkMediaQuery();
 window.addEventListener("resize", checkMediaQuery);
 
 btn.addEventListener("click", () => {
-  if (formControl.value.length > 0) {
+  if (formControl.value.length > 0 && (formControl.value.includes("@") && formControl.value.includes("."))) {
     sub.classList.remove("cript");
+    sub.textContent = "Gracias por suscribirte!";
+    sub.removeAttribute('style', 'color: red !important');
     formControl.value = "";
+  } else {
+    sub.classList.remove("cript");
+    sub.textContent = "Mail inválido..";
+    sub.setAttribute('style', 'color: red !important');
   }
 });

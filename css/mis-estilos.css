@@ -41,7 +41,6 @@
     color: darkblue;
 }
 
-/*font-size: 10rem;*/
 @media (min-width:992px) {
     h1 {
         font-family: 'Azonix';
@@ -51,7 +50,6 @@
 
 }
 
-
 @media (max-width:767px) {
 
     #texto h3 {
@@ -60,10 +58,6 @@
     }
 
 }
-
-/* .card {
-    background-color: rgb(41, 72, 73);
-} */
 
 .deep {
     font-family: 'Inter';
@@ -105,9 +99,6 @@ p {
 }
 
 @media (max-width:757px) {
-    #contacto h1 {
-        font-size: 4rem !important;
-    } 
 
     .card {
         width: 310px !important;
@@ -117,13 +108,10 @@ p {
         background: url('../img/nosBackMobile.jpg') no-repeat !important;
         background-size: cover !important;
     }
+
    .youtube {
     background-size: cover !important;
    }
-}
-
-#logo img {
-    color: yellow
 }
 
 .logoSmash,
@@ -136,16 +124,8 @@ p {
     font-size: small;
 }
 
-/* #explorar {
-    background: url("../img/fondoNos.jpg") no-repeat;
-    background-size: cover;
-} */
 
 .hero {
-    /* background-image: url(../img/smash1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -160,9 +140,7 @@ p {
 @media (max-width: 768px) {
     .img-banner {
         max-width: 100%;
-        /* Ajusta el ancho máximo de la imagen */
         height: auto;
-        /* Permite que la altura se ajuste proporcionalmente */
     }
 }
 
@@ -187,9 +165,7 @@ p {
 .download-now {
     background: url('../img/nosBack.jpg') no-repeat;
     background-size: cover;
-    /* height: 100vh; */
     padding: 100px 0 100px 0;
-
 }
 
 .historia-banda {
