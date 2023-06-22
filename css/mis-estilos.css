@@ -104,13 +104,13 @@ p {
     padding-left: 5rem;
 }
 
-@media (max-width:767px) {
+@media (max-width:757px) {
     #contacto h1 {
         font-size: 4rem !important;
-    }
+    } 
 
     .card {
-        width: 400px !important;
+        width: 310px !important;
     }
 
     .download-now {
