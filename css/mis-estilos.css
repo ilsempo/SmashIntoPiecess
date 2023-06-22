@@ -49,80 +49,16 @@
         font-size: 4rem;
     }
 
-    .carousel-caption {
-        top: 3rem
-    }
-
 }
 
-@media (max-width:992px) {
-    #carouselDark h1 {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 3rem;
-
-    }
-
-    .carousel-caption {
-        top: 3rem
-    }
-
-
-}
 
 @media (max-width:767px) {
-    #carouselDark h1 {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 2rem;
-
-    }
-
-    #carouselDark h2 {
-        font-size: 1rem;
-    }
 
     #texto h3 {
         text-align: center !important;
         text-justify: auto !important;
     }
 
-    .carousel-caption {
-        top: 3rem
-    }
-
-}
-
-@media (max-width:576px) {
-    #carouselDark h1 {
-        font-size: 1.5rem;
-    }
-
-    .carousel-caption {
-        top: 3rem;
-    }
-
-    #carouselDark h2 {
-        font-size: 0.5rem;
-    }
-
-}
-
-#carouselDark h1 {
-    font-family: 'Inter';
-    font-weight: 500;
-
-}
-
-#carouselDark h2 {
-    /*A este texto hay que moverlo hacia arriba*/
-    font-family: 'Inter';
-    font-weight: 400;
-}
-
-#carouselDark h3 {
-    font-family: 'Inter';
-    font-weight: 300;
 }
 
 /* .card {
@@ -137,9 +73,9 @@
 h1 {
     font-family: 'Azonix';
     font-size: 55px;
-    font-weight: 100;
+    font-weight: 600;
     margin: 100px 0 20px 0;
-    color: var(--color-secundario);
+    color: white;
 }
 
 h2 {
@@ -172,6 +108,7 @@ p {
     #contacto h1 {
         font-size: 4rem !important;
     }
+
 }
 
 #logo img {
@@ -188,10 +125,10 @@ p {
     font-size: small;
 }
 
-#explorar {
+/* #explorar {
     background: url("../img/fondoNos.jpg") no-repeat;
     background-size: cover;
-}
+} */
 
 .hero {
     /* background-image: url(../img/smash1.jpg);
@@ -317,7 +254,68 @@ p {
   padding-right: 3rem;
 }
 
+.card {
+    background-color: var(--color-terciario);
+    border: 3px solid var(--color-terciario);
+}
 
+/* .card-img {
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--color-secundario), var(--color-terciario)) 1;
+  } */
+  
+  .tarjeta {
+    background: linear-gradient(0deg, rgb(17, 25, 31), rgb(70, 46, 46));
+    position: relative;
+}
+
+
+.glow::before,
+.glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #f1e513, #ff6600, #00ff66, #00ffff,
+            #ff00ff, #9c7bb4 , #6e0dd0, #ff3300, #4fc0de);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animar 10s infinite linear;
+}
+
+@keyframes animar {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow::after {
+    filter: blur(.5em);
+}
+
+.youtube {
+    background: url('../img/fondoNos.jpg') no-repeat;
+    height: 100vh;
+}
+
+.btnYT {
+    width: 100%;
+}
+
+.cript {
+    display: none;
+}
 /*medida vh*/
 /*#texto va a tomar la id de base y cambiara la semantica del interior*/
 /*.card va a tomar todas las semanticas q coloques con eso*/

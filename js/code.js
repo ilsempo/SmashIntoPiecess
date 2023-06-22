@@ -1,7 +1,10 @@
 const discos = document.querySelectorAll(".disco");
 const audios = document.querySelectorAll("audio");
-const hero = document.querySelector('.hero');
-const nav = document.querySelector('.navbar');
+const hero = document.querySelector(".hero");
+const nav = document.querySelector(".navbar");
+const btn = document.querySelector(".btn-theme");
+const sub = document.querySelector(".sub");
+const formControl = document.querySelector(".form-control");
 
 discos.forEach((disco, index) => {
   const audio = audios[index];
@@ -11,17 +14,17 @@ discos.forEach((disco, index) => {
 
     if (isPlaying) {
       audio.pause();
-      disco.src = `img/disco${index + 1}.png`;
+      disco.src = `../img/disco${index + 1}.png`;
     } else {
       stopAllAudios();
       fadeVolumeIn(audio);
       audio.play();
-      disco.src = `img/disco${index + 1}rep.png`;
+      disco.src = `../img/disco${index + 1}rep.png`;
     }
   });
 
   audio.addEventListener("ended", () => {
-    disco.src = `img/disco${index + 1}.png`;
+    disco.src = `../img/disco${index + 1}.png`;
   });
 });
 
@@ -29,7 +32,7 @@ function stopAllAudios() {
   audios.forEach((audio, index) => {
     const disco = discos[index];
     audio.pause();
-    disco.src = `img/disco${index + 1}.png`;
+    disco.src = `../img/disco${index + 1}.png`;
   });
 }
 
@@ -54,41 +57,23 @@ function fadeVolumeIn(audio) {
   }, interval);
 }
 
-
 function checkMediaQuery() {
-  if (window.matchMedia('(max-width: 992px)').matches) {
-    hero.classList.add('mobile');
-    nav.classList.remove('navbar');
+  if (window.matchMedia("(max-width: 992px)").matches) {
+    hero.classList.add("mobile");
+    nav.classList.remove("navbar");
   } else {
-    hero.classList.remove('mobile');
-    nav.classList.add('navbar');
+    hero.classList.remove("mobile");
+    nav.classList.add("navbar");
   }
 }
 
 checkMediaQuery();
 
-window.addEventListener('resize', checkMediaQuery);
+window.addEventListener("resize", checkMediaQuery);
 
-
-const carouselItems = document.querySelectorAll('.carousel .carousel-item');
-
-carouselItems.forEach(function(item) {
-  const minPerSlide = 4;
-  let next = item.nextElementSibling;
-
-  if (!next) {
-    next = item.parentNode.firstElementChild;
-  }
-
-  item.appendChild(next.firstElementChild.cloneNode(true));
-
-  for (let i = 0; i < minPerSlide; i++) {
-    next = next.nextElementSibling;
-
-    if (!next) {
-      next = item.parentNode.firstElementChild;
-    }
-
-    item.appendChild(next.firstElementChild.cloneNode(true));
+btn.addEventListener("click", () => {
+  if (formControl.value.length > 0) {
+    sub.classList.remove("cript");
+    formControl.value = "";
   }
 });
