@@ -14,17 +14,17 @@ discos.forEach((disco, index) => {
 
     if (isPlaying) {
       audio.pause();
-      disco.src = `../img/disco${index + 1}.png`;
+      disco.src = `img/disco${index + 1}.png`;
     } else {
       stopAllAudios();
       fadeVolumeIn(audio);
       audio.play();
-      disco.src = `../img/disco${index + 1}rep.png`;
+      disco.src = `img/disco${index + 1}rep.png`;
     }
   });
 
   audio.addEventListener("ended", () => {
-    disco.src = `../img/disco${index + 1}.png`;
+    disco.src = `img/disco${index + 1}.png`;
   });
 });
 
@@ -32,7 +32,7 @@ function stopAllAudios() {
   audios.forEach((audio, index) => {
     const disco = discos[index];
     audio.pause();
-    disco.src = `../img/disco${index + 1}.png`;
+    disco.src = `img/disco${index + 1}.png`;
   });
 }
 
