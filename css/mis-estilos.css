@@ -3,7 +3,6 @@
     --color-secundario: #f0e51d;
     --color-terciario: #e61543;
     --color-cuarto: #0c0d0e;
-
 }
 
 @font-face {
@@ -247,12 +246,6 @@ p {
     width: 700px;
 }
 
-/* .card-img {
-    border-width: 10px;
-    border-style: solid;
-    border-image: linear-gradient(to right, var(--color-secundario), var(--color-terciario)) 1;
-  } */
-
 .tarjeta {
     background: linear-gradient(0deg, rgb(17, 25, 31), rgb(70, 46, 46));
     position: relative;
@@ -304,8 +297,3 @@ p {
 .cript {
     display: none;
 }
-
-/*medida vh*/
-/*#texto va a tomar la id de base y cambiara la semantica del interior*/
-/*.card va a tomar todas las semanticas q coloques con eso*/
-/*h1{} va a tomar todas las mismas etiquetas y cambiarlas*/
